@@ -1,0 +1,75 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+.tempesta-wrapper .form-table td {
+  position: relative;
+}
+
+.tempesta-wrapper .form-table td span#tm_copy_status {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  line-height: 16px;
+  font-size: 0.8em;
+  color: #999999;
+  display: none;
+}
+
+.tempesta-wrapper .form-table td > input[name=TempestaApiKey] {
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  outline: none;
+  cursor: default;
+  line-height: 22px;
+}
+
+.tempesta-wrapper .form-table td > input[name=TempestaApiKey]:focus,
+.tempesta-wrapper .form-table td > input[name=TempestaApiKey]:hover {
+  outline: none;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, .07);
+  border-color: #dddddd;
+}
+
+.tempesta-wrapper .form-table td span#tm_metatag_status {
+  color: #11c709;
+  position: relative;
+  top: -10px;
+  line-height: 16px;
+  font-size: 0.8em;
+}
+
+.tempesta-wrapper .tm-metabox-description {
+  color: #888888;
+}
+
+.tempesta-wrapper .tm-metabox-description b {
+  color: #000000;
+}
+
+@media screen and (max-width: 782px) {
+  .tempesta-wrapper .form-table td > span#tm_copy_status {
+    left: auto;
+    right: 8px;
+    top: -10px;
+  }
+
+  .tempesta-wrapper .form-table td > input[name=TempestaApiKey] {
+    max-width: initial;
+  }
+}
+
+#tm_metatags .form-table td input,
+#tm_metatags .form-table td textarea {
+  width: 100%;
+  text-align: left;
+}
+
+.tempesta-wrapper .message {
+  line-height: 1.3;
+  font-size: .8em;
+  color: green;
+  visibility: hidden;
+  margin-left: 1em;
+}
